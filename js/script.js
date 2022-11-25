@@ -53,3 +53,11 @@ var swiper = new Swiper(".home-slider", {
     },
     loop: true,
 });
+
+//dark and light mood
+const body = document.querySelector("body");
+const sunmoon = document.querySelector("#sunmoon");
+sunmoon.addEventListener("click", () => {
+    sunmoon.classList.toggle("fa-moon");
+    body.classList.toggle("darkmood");
+});
